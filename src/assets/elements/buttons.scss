@@ -1,0 +1,22 @@
+.pro_btn_one {
+    margin: 10px !important;
+    padding: 15px 45px !important;
+    text-align: center !important;
+    text-transform: uppercase !important;
+    transition: 0.5s !important;
+    background-size: 200% auto !important;
+    color: $main_color !important;
+    box-shadow: 0 0 20px $shadow !important;
+    border-radius: 10px !important;
+    background-image: $btn_bg !important;
+  }
+  
+.pro_btn_one:hover {
+    background-position: right center !important; /* change the direction of the change here */
+    color: $main_color !important;
+    text-decoration: none !important;
+}
+
+.pro_btn_text{
+    color: red !important;
+}
