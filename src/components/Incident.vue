@@ -38,9 +38,19 @@
                 v-model="state"
                 :items="states"
                 :rules="[() => !!state || 'Diese Feld wird benötigt']"
-                label="Schwere der Verletzung"
+                label="Intensität der Verletzung"
                 required
               ></v-autocomplete>
+              <v-text-field
+                ref="firstAidMeasures"
+                v-model="firstAidMeasures"
+                :rules="[
+                  () => !!firstAidMeasures || 'Diese Feld wird benötigt',
+                ]"
+                label="Eingeleitete Hilfe Maßnahmen"
+                required
+              >
+              </v-text-field>
               <v-text-field
                 ref="date"
                 v-model="today"
@@ -60,7 +70,7 @@
                   Zurück
                 </v-btn>
                 <v-spacer></v-spacer>
-                <v-btn class="btn_home" text @click="submit">
+                <v-btn class="btn_home" text @click="test">
                   Absenden
                 </v-btn>
               </v-card-actions>
@@ -74,6 +84,7 @@
 
 <script>
 import moment from "moment";
+//import axios from "axios";
 
 export default {
   name: "Incident",
@@ -87,7 +98,8 @@ export default {
     states: ["Leicht", "Schwer", "Lebensgefährlich"],
     state: null,
     reportingPerson: null,
-    today: moment().format("DD-MM-YYYY h:mm:ss"),
+    firstAidMeasures: null,
+    today: moment().format("DD-MM-YYYY HH:mm:ss"),
   }),
   methods: {
     moment: function() {
@@ -99,6 +111,11 @@ export default {
         if (!this.form[f]) this.formHasErrors = true;
         this.$refs[f].validate(true);
       });
+    },
+    test(worker) {
+      this.$store.dispatch("setWorker", worker);
+      console.log(worker.injuredPerson);
+      //axios.post("localhost:4200/api/workers");
     },
   },
   computed: {
