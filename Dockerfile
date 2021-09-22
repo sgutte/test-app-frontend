@@ -12,5 +12,6 @@ COPY prod_nginx.conf /etc/nginx/nginx.conf
 RUN chgrp -R root /var/cache/nginx /var/run /var/log/nginx && \
     chmod -R 770 /var/cache/nginx /var/run /var/log/nginx
     
-EXPOSE 8080:8080
+EXPOSE 4200:4200
+CMD ["npm", "run", "dev"]
 CMD ["nginx", "-g", "daemon off;"]
