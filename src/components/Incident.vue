@@ -121,7 +121,8 @@ export default {
       u_construction_site: null,
     },
     rules: [(v) => !!v || "Required!"],
-    url: "http://localhost:8080/api/incident",
+    url:
+      "http://test-app-backend-git-falco1234-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/api/incident",
   }),
   methods: {
     moment: function() {
@@ -157,7 +158,9 @@ export default {
   computed: {},
   mounted() {
     axios
-      .get("http://localhost:8080/api/constructionSite")
+      .get(
+        "http://test-app-backend-git-falco1234-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/api/constructionSite"
+      )
       .then(
         (response) => (
           this.$store.dispatch("setConstructionSites", response.data),
@@ -166,7 +169,9 @@ export default {
         )
       );
     axios
-      .get("http://localhost:8080/api/worker")
+      .get(
+        "http://test-app-backend-git-falco1234-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/api/worker"
+      )
       .then((response) => this.$store.dispatch("setWorkers", response.data));
   },
 };
