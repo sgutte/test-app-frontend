@@ -2,14 +2,20 @@
   <v-container>
     <v-row class="text-center">
       <v-col class="mb-4">
-        <v-btn class="btn_home" @click="routeIncident()">Unfall melden!</v-btn>
+        <v-btn class="btn_home" @click="routeIncident()">{{
+          $t("home.incidentButton")
+        }}</v-btn>
       </v-col>
-      <v-col><v-btn class="btn2">Verbandsbuch</v-btn></v-col>
+      <v-col
+        ><v-btn class="btn2" @click="routeFirstAidBook()">{{
+          $t("home.firstAidButton")
+        }}</v-btn></v-col
+      >
       <v-col cols="12">
         <v-img src="../assets/logo.png" class="mt-3 logo" alt="Logo der VCC" />
       </v-col>
       <v-col>
-        <h1>Notfallapp der VCC</h1>
+        <h1>{{ $t("home.homeText") }}</h1>
       </v-col>
     </v-row>
   </v-container>
@@ -23,6 +29,9 @@ export default {
   methods: {
     routeIncident() {
       this.$router.push("/incident");
+    },
+    routeFirstAidBook() {
+      this.$router.push("/firstAidBook");
     },
   },
 };

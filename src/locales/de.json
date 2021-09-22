@@ -1,0 +1,51 @@
+{
+    "required": "Benötigt",
+    "toolbar": {
+        "header": "Notfallapp",
+        "loginButton": "Login"
+    },
+    "home": {
+        "homeText": "Notfallapp von VCC",
+        "incidentButton": "Unfall melden!",
+        "firstAidButton": "Verbandbuch"
+    },
+    "incident": {
+        "injuredPersonLabel": "Name der verletzten Person",
+        "constructionSiteLabel": "Baustelle",
+        "injuryLabel": "Art der Verletzung",
+        "stateLabel": "Intensität der Verletzung",
+        "firstAidMeasuresLabel": "Erste-Hilfe Maßnahmen",
+        "todayLabel": "Datum",
+        "reportingPersonLabel": "Name der meldenden Person",
+        "submitButton": "Absenden",
+        "cancelButton": "Zurück"
+    },
+    "injuries": [
+        "Knochenbruch",
+        "Schnitt",
+        "Quetschung"
+    ],
+    "constructionSites": [
+        "Stuttgart, Lange Straße 25",
+        "Muenchen, Schneiderweg 1",
+        "Berlin, Amselgasse 77"
+    ],
+    "states": [
+        "Leicht",
+        "Schwer",
+        "Lebensgefährlich"
+    ],
+    "firstAidBook": {
+        "header": "Verbandbuch der VCC",
+        "table": {
+            "search": "Suche",
+            "header": {
+                "constructionSite": "Baustelle",
+                "date": "Datum",
+                "injuredPerson": "Verletzte Person",
+                "injury": "Verletzung",
+                "state": "Intensität"
+            }
+        }
+    }
+}

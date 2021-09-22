@@ -1,0 +1,50 @@
+{
+  "toolbar": {
+      "header": "Aplikacja awaryjna",
+      "loginButton": "Zaloguj sie"
+  },
+  "home": {
+      "homeText": "Awaryjna aplikacja VCC",
+      "incidentButton": "Zgłoś incydent!",
+      "firstAidButton": "Książka pierwszej pomocy"
+  },
+  "incident": {
+      "injuredPersonLabel": "Imię ofiary",
+      "constructionSiteLabel": "Budowa",
+      "injuryLabel": "Rodzaj urazu",
+      "stateLabel": "Intensywność urazu",
+      "firstAidMeasuresLabel": "Pierwsza pomoc",
+      "todayLabel": "Data",
+      "reportingPersonLabel": "Nazwisko osoby składającej sprawozdanie",
+      "submitButton": "Prześlij",
+      "cancelButton": "Anuluj"
+  },  
+  "injuries": [
+      "Złamanie kości",
+      "Cięcie",
+      "Squeeze"
+  ],
+  "constructionSites": [
+    "Stuttgart, Lange Straße 25",
+    "Muenchen, Schneiderweg 1",
+    "Berlin, Amselgasse 77"
+  ],
+  "states": [
+    "Światło",
+    "Ciężka",
+    "Zagrażające życiu"
+  ],
+  "firstAidBook": {
+      "header": "Księga pierwszej pomocy VCC",
+      "table": {
+        "search": "Szukaj",
+        "header": {
+            "constructionSite": "Budowa",
+            "date": "Data",
+            "injuredPerson": "Imię ofiary",
+            "injury": "Obrażenia",
+            "state": "Intensywność"
+        }
+    }
+  }
+}

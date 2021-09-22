@@ -1,0 +1,50 @@
+{
+    "toolbar": {
+        "header": "Emergencyapp",
+        "loginButton": "Login"
+    },
+    "home": {
+        "homeText": "Emergencyapp of VCC",
+        "incidentButton": "Report incident!",
+        "firstAidButton": "First aid book"
+    },
+    "incident": {
+        "injuredPersonLabel": "Name of the injured person",
+        "constructionSiteLabel": "Constructionsite",
+        "injuryLabel": "Type of injury",
+        "stateLabel": "Intensity of the injury",
+        "firstAidMeasuresLabel": "First aid measures",
+        "todayLabel": "Date",
+        "reportingPersonLabel": "Name of the reporting person",
+        "submitButton": "Submit",
+        "cancelButton": "Cancel"
+    },    
+    "injuries": [
+        "Bone fracture",
+        "Cut",
+        "Squeeze"
+    ],
+    "constructionSites": [
+        "Stuttgart, Lange Straße 25",
+        "Muenchen, Schneiderweg 1",
+        "Berlin, Amselgasse 77"
+    ],
+    "states": [
+        "Light",
+        "Heavy",
+        "Life-threatening"
+    ],
+    "firstAidBook": {
+        "header": "First aid book of VCC",
+        "table": {
+            "search": "Search",
+            "header": {
+                "constructionSite": "Constructionsite",
+                "date": "Date",
+                "injuredPerson": "Injured person",
+                "injury": "Injury",
+                "state": "Intensity"
+            }
+        }
+    }
+}

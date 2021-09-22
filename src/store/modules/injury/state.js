@@ -1,5 +1,5 @@
 export const state = {
-  worker: {
+  incident: {
     injuredPerson: null,
     constructionSite: null,
     injury: null,
@@ -7,7 +7,10 @@ export const state = {
     firstAidMeasures: null,
     today: null,
     reportingPerson: null
-  }
+  },
+  constructionSites: [],
+  incidents: [],
+  workers: []
 
 
 
