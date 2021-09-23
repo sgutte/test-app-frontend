@@ -2,20 +2,17 @@
   <v-toolbar dark class="pro_head fixed-bar">
     <h1 @click="routerToHome()">{{ $t("toolbar.header") }}</h1>
     <v-spacer></v-spacer>
+    
     <div class="locale-changer">
-      <select v-model="$i18n.locale">
+      <select v-model="$i18n.locale" class="flag">
         <option v-for="item in langs" :key="item.id">
-          <v-img :src="item.img" class="img" />
-          <img src="item.img" />
+          <v-img :src="item.img" class="img"/>
           <p>{{ item.lang }}</p>
         </option>
       </select>
     </div>
-    <div>
-      <v-btn class="btn_toolbar">
-        {{ $t("toolbar.loginButton") }}
-      </v-btn>
-    </div>
+
+ 
   </v-toolbar>
 </template>
 
@@ -25,9 +22,9 @@ export default {
   data() {
     return {
       langs: [
-        { id: 1, lang: "de", img: require("@/assets/de.png") },
-        { id: 2, lang: "en", img: require("@/assets/en.png") },
-        { id: 3, lang: "pl", img: require("@/assets/pl.png") },
+        { id: 1, lang: "deutsch", img: require("@/assets/de.png") },
+        { id: 2, lang: "englisch", img: require("@/assets/en.png") },
+        { id: 3, lang: "polnisch", img: require("@/assets/pl.png") },
       ],
     };
   },
@@ -61,9 +58,14 @@ export default {
   text-decoration: none !important;
 }
 
-.img {
+.locale-changer {
   width: 30px;
-  align-items: center;
+  align-items: left;
   margin: auto !important;
+}
+
+.flag{
+  color: $main_color;
+  background-color: black;
 }
 </style>
